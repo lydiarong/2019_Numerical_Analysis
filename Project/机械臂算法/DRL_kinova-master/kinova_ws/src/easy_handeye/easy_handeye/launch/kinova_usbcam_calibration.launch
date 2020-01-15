@@ -1,0 +1,16 @@
+<launch>
+
+    <!-- start easy_handeye -->
+    <include file="$(find easy_handeye)/launch/calibrate.launch" >
+        <arg name="eye_on_hand" value="false" />
+
+        <arg name="tracking_base_frame" value="camera" />
+        <arg name="tracking_marker_frame" value="tag_0" />
+        <arg name="robot_base_frame" value="j2n6s300_link_base" />
+        <arg name="robot_effector_frame" value="j2n6s300_link_6" />
+		<arg name="start_rviz" value="false" />
+		<arg name="move_group" value="arm" />
+        <arg name="freehand_robot_movement" value="true" />
+    </include>
+
+</launch>

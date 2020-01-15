@@ -1,0 +1,23 @@
+<launch>
+<!-- <include file="$(find kinova_bringup)/launch/kinova_robot.launch" /> -->
+<include file="$(find robot_vision)/launch/usb_cam_with_calibration.launch" />
+<include file="$(find kinova_description)/launch/kinova_continuous_detection.launch" />
+<include file="$(find easy_handeye)/launch/kinova_camera_tf_publisher.launch" />
+
+   <!--node pkg="tf" type="static_transform_publisher" name="world_to_cam" 
+          args="0 0 0 0 1.57 0 world camera 10" /-->
+
+	<arg name="gui" default="True" />
+	<arg name="kinova_robotType" default="j2n6s300" />
+	<param name="robot_description" command="$(find xacro)/xacro.py '$(find kinova_description)/urdf/$(arg kinova_robotType)_standalone.xacro'" />
+	<param name="use_gui" value="$(arg gui)"/>
+	<!--node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+		<param name="zeros/$(arg kinova_robotType)_joint_2" value="3.1415"/>
+		<param name="zeros/$(arg kinova_robotType)_joint_3" value="3.1415"/>
+	  <param name="zeros/$(arg kinova_robotType)_joint_4" value="3.1415"/> 
+	</node-->
+
+	<node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+	<!-- 运行rviz可视化界面 -->
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find kinova_description)/config/urdf.rviz" required="true" />
+</launch>

@@ -1,0 +1,19 @@
+function Simpson(f,a,b)
+  H = b-a
+  return H*(f(a)/6.0 + f(0.5*(a+b))*2.0/3.0 + f(b)/6.0)
+end
+function f(x)
+  return x*x*x
+end
+abs(Simpson(f,0.0,1.0) - 1/4.0)
+
+function g(x)
+  return exp(x)
+end
+abs(Simpson(g,0.0,1.0) - (exp(1.0)-1.0))
+abs(Simpson(g,0.0,10.0) - (exp(10.0)-1.0))
+
+function h(x)
+  return sin(x)
+end
+abs(Simpson(h,0.0,pi) - 2.0)

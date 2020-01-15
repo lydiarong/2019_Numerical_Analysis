@@ -1,0 +1,8 @@
+prefix=/home/lima/catkin_ws/devel
+
+Name: demo_moveit_config
+Description: Description of demo_moveit_config
+Version: 0.3.0
+Cflags: 
+Libs: -L/home/lima/catkin_ws/devel/lib 
+Requires: 

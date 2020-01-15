@@ -1,0 +1,188 @@
+\relax 
+\citation{english1998fault,english2000measuring}
+\citation{maciejewski1990fault,paredis1994kinematic,roberts1996local}
+\citation{english2000measuring}
+\citation{goel2005analyzing}
+\citation{7832455}
+\citation{cully2015robots}
+\citation{chatzilygeroudis2017black}
+\citation{goel2005analyzing}
+\citation{filion2018robot}
+\citation{hefele2001robot}
+\citation{hefele2001robot}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}}
+\newlabel{sec:introduction}{{I}{1}}
+\citation{7832455}
+\citation{goel2005analyzing}
+\citation{cully2015robots}
+\citation{chatzilygeroudis2017black}
+\citation{tsai1989new}
+\citation{denavit-1955a}
+\@writefile{toc}{\contentsline {section}{\numberline {II}Methods}{2}}
+\newlabel{section:methods}{{II}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-A}}Hand-eye Calibration}{2}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces }}{2}}
+\newlabel{dh_parameters}{{1}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-B}}Denavit-Hartenberg parameters}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-C}}Transformation Matrix}{2}}
+\newlabel{TransMat}{{1}{2}}
+\newlabel{rotation:x}{{3}{2}}
+\newlabel{rotation:y}{{4}{2}}
+\newlabel{rotation:z}{{5}{2}}
+\citation{wang2016iros}
+\citation{maciejewski1990fault,paredis1994kinematic,roberts1996local}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces  (Left) The original kinematic chain, which is derived from Denavit\IeC {\textendash }-Hartenberg parameters. (Middle) One joint is broken and the kinematic chain is therefore also broken. A QR code on the end-effector is used to estimate the position and orientation of the end effector. (Right) The new kinematic chain.}}{3}}
+\newlabel{f1}{{1}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-D}}Calculating the joint angle}{3}}
+\newlabel{chain:new}{{6}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The relative position between initial coordinate systems and constrained case coordinate systems. }}{3}}
+\newlabel{f2}{{2}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-E}}The adaptive algorithm}{3}}
+\citation{tsai1989new}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The pipeline of the variant Newton-Raphson method. It starts from the current position, getting the current joint angles.}}{4}}
+\newlabel{f8}{{3}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-F}}Experimental setting}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The constrained angle we calibrated. When the camera saw the QR code, we kept calculating the constrained angle every 0.1 seconds. Due to the noise, the value of joint angle is fluctuating. But the general trend is around at $57.6937 ^\circ $. So we regard it as the constrained angle.}}{4}}
+\newlabel{f9}{{4}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces The environment of our experiment. The QR code is placed on the end-effector, while the camera is at the base. Points A, B and C are used for our experiments.}}{4}}
+\newlabel{f10}{{5}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {III}Results}{4}}
+\newlabel{section:results}{{III}{4}}
+\citation{nakamura1987task}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Trajectories of three cases. The picking point is set to point A, shown in Fig. 5\hbox {}, and the placing point is set to point C. For modified path, we constrain joint 3 at an angle of $50 ^\circ $. The end-effector first moves directly above the picking point, then closes the gripper and moves up. Then, it moves directly above the placement point, where it moves down to place the object. }}{5}}
+\newlabel{f4}{{6}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces The trajectories of the end-effector, from start point to end point, under the original algorithm and our Adaptive algorithm. Each algorithm has seven trajectories, and we constrained joint 3 at an angle of $70 ^\circ $. The seven trajectories of our algorithm are almost coincident. }}{5}}
+\newlabel{f5}{{7}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces  The changes in six joints, from start point to end point, under the original algorithm and our Adaptive algorithm. We constrained joint 3 at an angle of $70 ^\circ $. The rotation of joints are different under the two algorithms, but eventually they reach the same target point. }}{5}}
+\newlabel{f6}{{8}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces The change in roll, pitch, yaw under two algorithms. Comparing the original, modified and constrained paths we can see the changes in orientation.}}{5}}
+\newlabel{f7}{{9}{5}}
+\citation{nakamura1987task}
+\citation{7832455}
+\citation{goel2005analyzing}
+\citation{cully2015robots}
+\citation{goel2005analyzing}
+\citation{7832455}
+\citation{rosendo2017trade}
+\citation{cully2015robots}
+\citation{chatzilygeroudis2017black}
+\citation{chatzilygeroudis2017black}
+\citation{kroll2000grey}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces The robustness of our algorithm with different constrained angle in different joints }}{6}}
+\newlabel{tab:aStrangeTable}{{2}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Discussion}{6}}
+\newlabel{section:discussion}{{IV}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}}Influence on orientation}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}Try not. Do, or do not}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}}Limitations}{6}}
+\citation{chen2003optimal}
+\citation{filion2018robot}
+\@writefile{toc}{\contentsline {section}{\numberline {V}Conclusion}{7}}
+\newlabel{section:conclusion}{{V}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-A}}Abbreviations and Acronyms}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-B}}Other Recommendations}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-C}}Equations}{7}}
+\newlabel{eq}{{8}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-D}}\LaTeX  -Specific Advice}{8}}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Units}{8}}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Some Common Mistakes}{8}}
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}Guidelines for Graphics Preparation and Submission}{8}}
+\newlabel{sec:guidelines}{{VIII}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VIII-A}}Types of Graphics}{8}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-A}1}Color/Grayscale figures}{8}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-A}2}Line Art figures}{8}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-A}3}Author photos}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Magnetization as a function of applied field. It is good practice to explain the significance of the figure in the caption.}}{9}}
+\newlabel{fig1}{{10}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-A}4}Tables}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VIII-B}}Multipart figures}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VIII-C}}File Formats For Graphics}{9}}
+\newlabel{formats}{{\unhbox \voidb@x \hbox {VIII-C}}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VIII-D}}Sizing of Graphics}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VIII-E}}Resolution }{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VIII-F}}Vector Art}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VIII-G}}Color Space}{9}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Units for Magnetic Properties}}{10}}
+\newlabel{table}{{3}{10}}
+\newlabel{tab1}{{3}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VIII-H}}Accepted Fonts Within Figures}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VIII-I}}Using Labels Within Figures}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-I}1}Figure Axis labels }{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VIII-I}2}Subfigure Labels in Multipart Figures and Tables}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VIII-J}}File Naming}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VIII-K}}Referencing a Figure or Table Within Your Paper}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VIII-L}}Checking Your Figures: The IEEE Graphics Analyzer}{10}}
+\citation{b3}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VIII-M}}Submitting Your Graphics}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VIII-N}}Color Processing/Printing in IEEE Journals}{11}}
+\@writefile{toc}{\contentsline {section}{\numberline {IX}Conclusion}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {-A}}References}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {-B}}Footnotes}{11}}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Submitting Your Paper for Review}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {A-A}}Final Stage}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {A-B}}Review Stage Using ScholarOne\textregistered \ Manuscripts}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {A-C}}Final Stage Using ScholarOne Manuscripts}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {A-D}}Copyright Form}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}IEEE Publishing Policy}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {C}Publication Principles}{12}}
+\citation{b1,b2}
+\citation{b3}
+\citation{b5}
+\citation{b6,b7}
+\citation{b8,b9}
+\citation{b10}
+\citation{b13}
+\citation{b14}
+\citation{b16}
+\citation{b17}
+\citation{b18,b19}
+\citation{b20}
+\citation{b21}
+\citation{b22}
+\citation{b23}
+\citation{b24}
+\citation{b25,b26}
+\citation{b27}
+\citation{b29}
+\citation{b30,b31}
+\citation{b32,b33}
+\@writefile{toc}{\contentsline {section}{\numberline {D}Reference Examples}{13}}
+\citation{b34}
+\bibcite{b1}{1}
+\bibcite{b2}{2}
+\bibcite{b3}{3}
+\bibcite{b4}{4}
+\bibcite{b5}{5}
+\bibcite{b6}{6}
+\bibcite{b7}{7}
+\bibcite{b8}{8}
+\bibcite{b9}{9}
+\bibcite{b10}{10}
+\bibcite{b11}{11}
+\bibcite{b12}{12}
+\bibcite{b13}{13}
+\bibcite{b14}{14}
+\bibcite{b15}{15}
+\bibcite{b16}{16}
+\bibcite{b17}{17}
+\bibcite{b18}{18}
+\bibcite{b19}{19}
+\bibcite{b20}{20}
+\bibcite{b21}{21}
+\bibcite{b22}{22}
+\bibcite{b23}{23}
+\bibcite{b24}{24}
+\bibcite{b25}{25}
+\bibcite{b26}{26}
+\bibcite{b27}{27}
+\bibcite{b28}{28}
+\bibcite{b29}{29}
+\bibcite{b30}{30}
+\bibcite{b31}{31}
+\bibcite{b32}{32}
+\bibcite{b33}{33}
+\bibcite{b34}{34}
+\@writefile{toc}{\contentsline {section}{REFERENCES}{14}}
+\@writefile{toc}{\contentsline {subsection}{First A. Author}{14}}
+\@writefile{toc}{\contentsline {subsection}{Second B. Author}{15}}
+\@writefile{toc}{\contentsline {subsection}{Third C. Author, Jr.}{15}}

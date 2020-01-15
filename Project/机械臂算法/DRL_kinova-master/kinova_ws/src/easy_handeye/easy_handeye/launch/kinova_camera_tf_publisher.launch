@@ -1,0 +1,9 @@
+<launch>
+    <include file="$(find easy_handeye)/launch/publish.launch" >
+        <arg name="eye_on_hand" value="false" />
+
+        <arg name="tracking_base_frame" value="camera" /> 
+        <arg name="robot_base_frame" value="j2n6s300_link_base" />
+    </include>
+
+</launch>
